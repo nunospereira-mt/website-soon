@@ -1,0 +1,48 @@
+﻿/*************************************************/
+/*************** Sansation Family ***************/
+/*************************************************/
+
+/********** Sansation Light **********/
+@font-face {
+	font-family: "Sansation";
+	src: url(../fonts/Sansation/Sansation_Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+/********** Sansation Light Italic **********/
+@font-face {
+	font-family: "Sansation";
+	src: url(../fonts/Sansation/Sansation_Light_Italic.ttf) format('truetype');
+	font-weight: 350;
+	font-style: normal;
+	font-display: swap;
+}
+
+/********** Sansation Regular **********/
+@font-face {
+	font-family: "Sansation";
+	src: url(../fonts/Sansation/Sansation_Regular.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/********** Sansation Bold **********/
+@font-face {
+	font-family: "Sansation";
+	src: url(../fonts/Sansation/Sansation_Bold.ttf) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/********** Sansation Bold Italic **********/
+@font-face {
+	font-family: "Sansation";
+	src: url(../fonts/Sansation/Sansation_Bold_Italic.ttf) format("truetype");
+	font-weight: 750;
+	font-style: normal;
+	font-display: swap;
+}

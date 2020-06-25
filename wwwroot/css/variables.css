@@ -1,0 +1,8 @@
+﻿:root {
+	--darkgrey: #1E1E1E;
+	--lightgrey: #666a72;
+	--red: #b82601;
+	--black: #000;
+	--white: #fff;
+	--transition: all .2s ease-in-out;
+}

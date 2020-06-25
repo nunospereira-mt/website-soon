@@ -1,0 +1,224 @@
+﻿::root {
+    font-size: 16px;
+}
+
+:focus {
+    outline: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    background-color: var(--darkgrey);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+header .logo {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 15px;
+    transition: all .2s ease-in-out;
+}
+
+@media (max-width: 710px) {
+
+    header .logo {
+        max-width: 45px;
+        max-height: 45px;
+    }
+}
+
+main {
+    padding: 0;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkgrey);
+    color: var(--white);
+    width: 100%;
+}
+
+main .content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    max-width: 645px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main .content .title {
+    margin: 0;
+    font-family: "Sansation";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    text-align: center;
+}
+
+main .content span {
+    width: 90%;
+    border: solid 1px var(--white);
+}
+
+main .content .subtitle {
+    margin: 0;
+    padding: 25px 0;
+    font-family: "Sansation";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 710px) {
+
+    main .content, .project-banner .content {
+        max-width: 455px;
+    }
+
+    main .content .title, .project-banner .content .title {
+        font-size: 4rem;
+    }
+
+    main .content .subtitle {
+        padding: 10px 0;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 495px) {
+
+    main .content {
+        max-width: 300px;
+    }
+
+    main .content .title {
+        font-size: 2.5rem;
+    }
+
+    main .content .subtitle {
+        padding: 10px 0;
+        font-size: 1.25rem;
+    }
+}
+
+footer {
+    background-color: var(--darkgrey);
+    color: var(--white);
+}
+
+footer .container{
+    margin: 0 auto;
+    display: flex;
+    max-width: 800px;
+}
+
+footer .container .social, footer .container .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+
+footer .copyright{
+    padding: 0;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Sansation";
+    text-align: center;
+    width: 100%;
+}
+
+footer .container .social .title, footer .container .contacts .title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    width: 100%;
+    color: var(--white);
+    font-family: "Sansation";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+}
+
+footer .container .social .text {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+footer .container .contacts .text {
+    padding: 10px 0px;
+    text-decoration: none;
+    width: initial;
+    color: var(--white);
+    font-family: "Sansation";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+footer .container .social .text, footer .container .contacts .text {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+}
+
+footer .container .social .text:hover, footer .container .contacts .text:hover {
+    color: var(--lightgrey);
+}
+
+@media (max-width: 700px) {
+
+    footer {
+        flex-wrap: wrap;
+    }
+    
+    footer .container{
+        flex-wrap: wrap;
+        max-width: 285px;
+    }
+
+    footer .container .social, footer .container .contacts {
+        padding: 25px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    footer .container .social .title, footer .container .contacts .title {
+        font-size: 1.25rem;
+    }
+
+    footer .container .contacts .text {
+        font-size: 1rem;
+    }
+
+}
